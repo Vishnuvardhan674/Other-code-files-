@@ -1,0 +1,91 @@
+<DOCKTYPE! html>
+<html>
+<head> 
+<title>Login form</title>
+<style>
+body {
+background-color: milkwhite;
+}
+.myRegTable{
+text-align: left;
+font-family: verdana;
+font-size: 20px;
+font-weight:bold;
+text-align:center;
+}
+input,select,textarea {
+color:red;
+font-family: verdana;
+font-size: 20px;
+font-weight:bold;
+padding: 5px 5px;
+margin: 8px 0;
+border: 1px solid blue;
+border-radius:5px;
+}
+input[type=submit] ,input[type=reset], input[type=button],button{
+color:green;
+font-family: verdana;
+font-size: 20px;
+font-weight:bold;
+padding: 10px 10px;
+margin: 22px 0;
+}
+input[type=radio],input[type=checkbox] {
+color:red;
+border: 5px red solid;
+width: 1.5em;
+height: 1em;
+}
+div{
+background-color:beige;
+width:70%;
+margin-left:150px;
+padding-left:20px;
+text-align:center;
+}
+h2{
+text-align:center;
+}
+ 
+</style>
+
+<body>
+ <div>
+<form action="register.jlc" method="POST" enctype="multipart/form-data">
+<table class="myRegTable">
+<caption> <h2 > Login form</h2></caption>
+
+ 
+ 
+<tr>
+<td> <label for="email" > Email ID </label></td>
+<td> <input type="text" id="email" name="email" /></td>
+</tr>
+
+<tr>
+<td> <label for="pword" > Password </label></td>
+<td> <input type="password" id="pword" name="pword" /></td>
+</tr>
+
+ 
+ <tr>
+<td colspan="2">
+<input type="button" value="Submit" onclick="openNewWin()"/ >
+ <input type="reset" id="reset" value="reset" />
+ <input type="hidden" name="mytoken" value="D1X5w9"/>
+</td>
+</tr>
+
+</table>
+</form>
+</div>
+
+<script>
+function openNewWin(){
+ newWin = window.open("proec1.html","newWin")
+ }
+</script>
+</body>
+</head>
+</html>
